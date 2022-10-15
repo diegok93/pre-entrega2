@@ -1,3 +1,5 @@
+/*CSS PARA GRIDS, LO HAGO SOLO PARA APLICARLO A LOS 2HTML REQUERIDOS EN LA PREENTREGA2 Y QUE EL RESTO DE LA WEB SIGA SIENDO NAVEGABLE*/
+
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Reem+Kufi+Fun&display=swap');
 
 /*
@@ -223,3 +225,120 @@ form{
     padding-bottom: 20px;
 }
 
+/*GRIDS*/
+
+.contGrid{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "header"
+    "aside" 
+    "main"
+    "footer"
+    ;
+    gap: 10px;
+
+}
+
+header{
+    grid-area: header;
+}
+
+aside{
+    grid-area: aside
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer; 
+}
+
+/*TABLET*/
+@media (max-width: 768px){
+    .navBar{
+        display: flex;
+        font-size: 20px;
+        padding: 5px 0px 0px 15px;
+        gap: 18px;
+        
+    }
+    
+    .navBar img{
+        width: 30px;
+        height: 30px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 14px;
+    }
+    h3{
+        font-size: 12px;
+    }
+} 
+
+/*MOBILE*/
+@media (max-width: 576px){
+    .navBar{
+        display: flex;
+        font-size: 14px;
+        padding: 5px 0px 0px 15px;
+        gap: 18px;
+        
+    }
+    
+    .navBar img{
+        width: 25px;
+        height: 25px;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 12px;
+    }
+    h3{
+        font-size: 10px;
+    }
+    .box1{
+        width: 150px;
+        margin-left: 10px;
+    }
+    .box1 img{
+        width: 150px;
+        height: 150px;
+    }
+    .box2{
+        width: 150px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    main article {
+        margin: 10px 0px 20px 40px;
+        width: 350px;
+        height: 170px;
+        border: 1px solid rgba(26, 26, 26, 0.671); 
+        border-style:solid;
+        border-radius: 0px 0px 25px 0px;
+    }
+    footer{
+        background-color: rgba(200, 200, 200, 0.5);
+        height: 20px;
+        font-family: 'Reem Kufi Fun', sans-serif;
+        font-size: 8px;
+    }
+    .footerBar img{
+        width: 8px;
+        height: 8px;
+    }
+    
+}
