@@ -20,7 +20,7 @@ p{
     margin-bottom: 5px;
 }
 
-.navBar{
+.barraNav{
     display: flex;
     font-size: 25px;
     padding: 5px 0px 0px 15px;
@@ -28,11 +28,11 @@ p{
     font-family: 'Reem Kufi Fun', sans-serif;
 }
 
-.navBar img{
+.barraNav img{
     border-radius: 50%;
 }
 
-.navBar li{
+.barraNav li{
     display: inline;
 }
 
@@ -93,12 +93,12 @@ main article {
     height: 250px;
 }
 
-.navBar li{
+.barraNav li{
     list-style: none;
     text-align: justify;
 }
 
-.navBar li a{
+.barraNav li a{
     text-decoration: none;
     color: rgb(12, 0, 180);
 }
@@ -242,7 +242,7 @@ form{
     width: 100%;
     height: 100vh;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 65px 300px auto 30px;
     grid-template-areas: 
     "header"
     "aside" 
@@ -271,7 +271,7 @@ footer{
 
 /*TABLET*/
 @media (max-width: 768px){
-    .navBar{
+    .barraNav{
         display: flex;
         font-size: 20px;
         padding: 5px 0px 0px 15px;
@@ -279,7 +279,7 @@ footer{
         
     }
     
-    .navBar img{
+    .barraNav img{
         width: 30px;
         height: 30px;
     }
@@ -293,11 +293,23 @@ footer{
     h3{
         font-size: 12px;
     }
+
+    .faq {
+        margin: 10px 0px 20px 20px;
+        padding: 15px 15px 15px 15px;
+        width: 600px;
+    }
+
+    .contGrid{
+        grid-template-rows: 42px 150px auto 30px;
+        gap: 15px;
+    }
+    
 } 
 
 /*MOBILE*/
 @media (max-width: 576px){
-    .navBar{
+    .barraNav{
         display: flex;
         font-size: 14px;
         padding: 5px 0px 0px 15px;
@@ -305,7 +317,7 @@ footer{
         
     }
     
-    .navBar img{
+    .barraNav img{
         width: 25px;
         height: 25px;
     }
@@ -351,12 +363,21 @@ footer{
         height: 12px;
     }
     
+    .faq {
+        margin: 5px 0px 20px 5px;
+        padding: 15px 15px 15px 25px;
+        width: 400px;
+    }
+
+    .contGrid{
+        grid-template-rows: 35px 100px auto 30px;
+    }
 }
 
 
 /*Pseudo class elements*/
 
-.navBar li a:hover{
+.barraNav li a:hover{
     color: rgb(180, 0, 60);
     text-decoration: underline;
 }
@@ -384,7 +405,7 @@ textarea:focus{
     color: rgb(12, 0, 180);
 }
 
-
-.carousel{
-    padding-bottom: 50px;
+.nav-link:hover{
+    color: rgb(180, 0, 60);
+    text-decoration: underline;
 }
